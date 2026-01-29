@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <meta charset="utf-8" />
+    <title>Parser</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+    <div id="text-content"></div>
+    <script src="src/parser.js"></script>
+    <script>
+        const someContent = `
+# H1 headline
+## H2 headline
+### H3 headline
+#### H4 Headline
+##### h5 Headline
+###### h6 Headline
+Paragraph
+        `;
+        let textBox = document.getElementById("text-content");
+        textBox.innerHTML = parseMarkdown(someContent);
+    </script>
+</body>
+</html>

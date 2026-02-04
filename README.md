@@ -1,4 +1,4 @@
-# Create a Javascript Markdown to Html parser
+# A litghtwieght Markdown to Html parser in Javascript
 
 Ligthwieght parser for Markdown to Html, this is a small sideproject due to my own needs for now it only supports 
 

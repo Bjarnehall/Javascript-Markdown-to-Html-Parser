@@ -7,7 +7,7 @@
 </head>
 <body>
     <div id="text-content"></div>
-    <script src="src/parser.js"></script>
+    <script src="src/parse.js"></script>
     <script>
         const someContent = `
 # H1 headline
@@ -16,7 +16,14 @@
 #### H4 Headline
 ##### h5 Headline
 ###### h6 Headline
-Paragraph
+This is a Paragraph i will continue writing for a bit longer. Did
+you know that the weather this week has been horrible?
+
+\`\`\`
+# This is a bit of Javascript
+let hello = "Hello";
+console.log(hello);
+\`\`\`
         `;
         let textBox = document.getElementById("text-content");
         textBox.innerHTML = parseMarkdown(someContent);
